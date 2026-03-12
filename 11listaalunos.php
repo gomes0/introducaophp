@@ -40,7 +40,8 @@
         }
     </style>";
 
-    if($resultado->num_rows > 0) {
+    if($resultado->num_rows > 0) 
+    {
         echo "<div class='container'>";
     
         while ($linha = $resultado->fetch_assoc()) 
