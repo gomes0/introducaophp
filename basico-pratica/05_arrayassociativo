@@ -1,0 +1,15 @@
+<?php
+    $consulta = [
+        "CEP" => "12345-678",
+        "Rua" => "Av. Independência",
+        "Número" => "82",
+        "Bairro" => "Palmital",
+        "Cidade" => "Marília",
+        "UF" => "SP"
+    ];
+
+    for($i = 0; $i < count($consulta); $i++)
+    {
+        echo $consulta[$i] . "<br>";
+    }
+?>
