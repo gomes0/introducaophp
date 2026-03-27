@@ -10,7 +10,8 @@
     $dataNascimentoAnos = new DateTime($dataNascimento);
     $idade = $dataAtual->diff($dataNascimentoAnos)->y;
 
-    echo"Nome: $nome <br>",
+    echo
+        "Nome: $nome <br>",
         "Data de Nascimento: $dataNascimento Idade: $idade anos <br>",
         "Curso: $curso <br>";
 ?>

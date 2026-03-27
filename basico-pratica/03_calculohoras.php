@@ -1,6 +1,6 @@
 <?php
-    $horaEntrada = "08:30";
-    $horaSaida = "17:45";
+    $horaEntrada = "08:00";
+    $horaSaida = "18:45";
     
     //Calculo
     $entrada = new DateTime($horaEntrada);
@@ -9,5 +9,5 @@
 
     echo "Hora de Entrada: $horaEntrada <br>",
          "Hora de Saída: $horaSaida <br>",
-         "Duração do Trabalho: ".$duracao->h." horas e ".$duracao->i." minutos.";
+         "Duração do Trabalho: ".$duracao->h.":".$duracao->i." horas <br>";
 ?>

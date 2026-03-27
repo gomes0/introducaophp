@@ -113,8 +113,8 @@
 
     ];
 
-    for($i = 0; $i < count($estados); $i++)
+    foreach($estados as $estado)
     {
-        echo "UF: " .$estados[$i]['UF'] . " - Estado: " .$estados[$i]['Estado'] . "<br>";
+        echo "UF: " .$estado['UF'] . " - Estado: " .$estado['Estado'] . "<br>";
     }
 ?>
