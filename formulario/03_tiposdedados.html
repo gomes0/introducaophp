@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+ 
+        <head>
+            <meta charset="UTF-8">
+            <title>Formulário Tipo de Dados - Exoplanetas</title>
+        </head>
+
+        <body>
+            <h1>Relatório de Exploração de Exoplaneta</h1>
+
+            <form method="POST" action="03_tiposdados.php" enctype="multipart/form-data">
+
+        
+                Nome da Sonda (text): 
+                <input type="text" name="sonda_nome" required><br><br>
+
+                E-mail do Centro de Comando (email): 
+                <input type="email" name="comando_email"><br><br>
+
+                Senha da Transmissão (password/senha): 
+                <input type="password" name="hash_transmissao"><br><br>
+
+                Pesquisar Constelação (search/pesquisa): 
+                <input type="search" name="busca_constelacao"><br><br>
+
+                Frequência de Rádio (tel): 
+                <input type="tel" name="freq_radio"><br><br>
+
+                Link do Repositório de Dados (url): 
+                <input type="url" name="url_dados"><br><br>
+
+                Massa Estimada (Terra = 1) (number): 
+                <input type="number" name="massa_planeta" step="0.1"><br><br>
+
+                Nível de Radiação Atmosférica (range/alcance): 
+                <input type="range" name="radiacao" min="0" max="100"><br><br>
+
+                Data da Descoberta (date/data): 
+                <input type="date" name="data_avistamento"><br><br>
+
+                Hora do Primeiro Contato (time/hora): 
+                <input type="time" name="hora_contato"><br><br>
+
+                Próximo Alinhamento Estelar (datetime-local): 
+                <input type="datetime-local" name="alinhamento_dt"><br><br>
+
+                Mês do Início do Inverno Local (month/mês): 
+                <input type="month" name="mes_inverno"><br><br>
+
+                Semana de Coleta de Amostras (week/semana): 
+                <input type="week" name="semana_coleta"><br><br>
+
+                Composição Predominante (radiobutton): 
+                <input type="radio" name="composicao" value="rochoso"> Rochoso
+                <input type="radio" name="composicao" value="gasoso"> Gasoso
+                <input type="radio" name="composicao" value="gelo"> Gigante de Gelo<br><br>
+
+                Elementos Detectados (checkbox): 
+                <input type="checkbox" name="elementos[]" value="oxigenio"> Oxigênio
+                <input type="checkbox" name="elementos[]" value="metano"> Metano
+                <input type="checkbox" name="elementos[]" value="agua"> Vapor de Água<br><br>
+
+                Espectrografia da Atmosfera - Imagem: 
+                <input type="file" name="espectro_img"><br><br>
+
+                Cor da Estrela Hospedeira (color/cor_estrela): 
+                <input type="color" name="cor_estrela" value="#ffff00"><br><br>
+
+                <input type="submit" value="Transmitir para Terra (submit)"><br><br>
+        
+                <input type="reset" value="Abortar e Limpar (reset)"><br><br>
+
+            </form>
+
+        </body>
+
+    </html>
