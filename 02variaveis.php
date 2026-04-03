@@ -1,4 +1,4 @@
 <?php
-$nome = ' Elias Gomes';
-echo "Olá,$nome!"
+    $nome = ' Elias Gomes';
+    echo "Olá,$nome!"
 ?>
